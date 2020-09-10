@@ -10,12 +10,9 @@ const Home=()=>{
             <Title>Quiz App</Title>
             <P>  Test Your Knowledge!</P>
         </Section>
-        
         <StartBtn type={"button"}>
-        <CustomLInk to={'/quiz'}>Start   
-        </CustomLInk>
+            <CustomLInk to={'/quiz'}>Start</CustomLInk>
         </StartBtn>
-     
     </Container>
     );
 

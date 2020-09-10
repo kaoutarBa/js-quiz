@@ -1,9 +1,11 @@
 import React from 'react';
-
+import ProgressBar from 'components/ProgressBar';
+import Questions from 'components/Questions';
 const QuizPage=()=>{
     return(
     <div>
-        QuizPage 
+        <ProgressBar />
+        <Questions/>
     </div>
     );
 
