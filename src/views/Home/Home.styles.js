@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-
+import { Link } from "react-router-dom";
 
 const Container=styled.div`
 height:95vh;
@@ -53,6 +53,13 @@ background:white;
     border:none;
 }
 `;
+const CustomLInk=styled(Link)`
+text-decoration:none;
+color:inherit;
 
 
-export {Img,P,Title,Container,StartBtn,Section};
+
+`;
+
+
+export {Img,P,Title,Container,StartBtn,Section,CustomLInk};
