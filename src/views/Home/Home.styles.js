@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from "react-router-dom";
 
 const Container=styled.div`
-height:95vh;
+max-height:80vh;
 width:100%;
 display:grid;
 grid-template-columns:50% 5% 35% 10%;
