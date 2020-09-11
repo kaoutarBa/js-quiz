@@ -24,9 +24,9 @@ color:#2c2c2c;
 const Choice=styled.div`
 width: 653px;
 height: 40px;
-background: #FFFFFF;
-border-radius: 5px;
+background-color: #FFFFFF;
 color:#2c2c2c;
+border-radius: 5px;
 cursor:pointer;
 &:hover{
     background: whitesmoke;
