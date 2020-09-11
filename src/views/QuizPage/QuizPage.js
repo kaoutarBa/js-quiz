@@ -1,12 +1,21 @@
-import React from 'react';
-// import ProgressBar from 'components/ProgressBar';
+import React,{useState}  from 'react';
+import ProgressBar from 'components/ProgressBar';
 import Questions from 'components/Questions';
 import {Container} from './QuizPage.styles';
-const QuizPage=()=>{
+import questions from './questions.json';
+
+const QuizPage=({setResult})=>{
+    const[currentQuestion,setCurrentQuestion]=useState(1);
+
     return(
     <Container>
-        {/* <ProgressBar /> */}
-        <Questions/>
+        <div>{currentQuestion}/{Object.keys(questions).length}</div>
+        <ProgressBar  currentQuestion={currentQuestion}
+        questions={questions}/>
+        <Questions setResult={setResult} 
+        questions={questions}
+        setCurrentQuestion={setCurrentQuestion}
+        currentQuestion={currentQuestion}/>
     </Container>
     );
 

@@ -2,10 +2,11 @@ import React from 'react';
 import {ProgBarContainer,DynamicProgBar} from './ProgressBar.styles';
 
 
-const ProgressBar=()=>{
+const ProgressBar=({currentQuestion,questions})=>{
+    let width=(currentQuestion/Object.keys(questions).length)*100;
     return(
         <ProgBarContainer>
-            <DynamicProgBar width={"70%"}/>
+            <DynamicProgBar width={`${width}%`}/>
         </ProgBarContainer>
         
     )
