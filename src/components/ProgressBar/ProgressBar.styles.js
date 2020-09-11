@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const ProgBarContainer=styled.div`
-width: 678px;
-height: 33px;
+width: 500px;
+height:20px;
 background: #dcecf1;
 border:1px solid #3BA6C8;
 border-radius:1px;
@@ -13,7 +13,6 @@ width: ${props=>props.width};
 height: 100%;
 background-color: #3BA6C8;
 border-radius:1px;
-
 `;
 
 
