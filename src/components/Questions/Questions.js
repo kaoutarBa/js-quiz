@@ -7,26 +7,31 @@ const Questions=()=>{
     const[currentQuestion,setCurrentQuestion]=useState(1);
     const[result,setResult]=useState(0);
     const[userAnswer,setUserAnswer]=useState("");
-console.log(result);
+    const[colors,setColors]=useState([["#FFFFFF","#2c2c2c"],["#FFFFFF","#2c2c2c"],["#FFFFFF","#2c2c2c"]]);
+    console.log(result);
+
     const handleSubmit=()=>{
         setCurrentQuestion(prev=>prev+1);
         if(userAnswer){
             setResult(res=>res+1);
         }
+        setColors([
+            ["#FFFFFF","#2c2c2c"],
+            ["#FFFFFF","#2c2c2c"],
+            ["#FFFFFF","#2c2c2c"]]);
     };
-    const handleAnswering=(e,choice)=>{
-        if(e.target.style.backgroundColor==="green"){
-            e.target.style.backgroundColor="#FFFFFF";
-            e.target.style.color="#2c2c2c";
-            setUserAnswer("");
-
-        }
-        else{
-            e.target.style.backgroundColor="green";
-            e.target.style.color="white";
-            setUserAnswer(choice);
-        }
-
+    const handleAnswering=(e,choice,choiceIndex)=>{
+        const newColors=colors.map((colorSet,index)=>{
+                if(choiceIndex===index){
+                    colorSet=["green","white"];
+                }
+                else{
+                    colorSet=["#FFFFFF","#2c2c2c"];
+                }
+                return colorSet;
+            });
+        setColors(newColors);
+        setUserAnswer(choice);
     };
     return(
             Object.keys(questions).filter(q=>q[1]===""+currentQuestion).map(q=>{
@@ -35,7 +40,8 @@ console.log(result);
                 <Question>{questions[q].question}</Question>
                 {questions[q].choices.map((ch,index)=>{
                     return(
-                        <Choice key={index} onClick={(e)=>handleAnswering(e,ch.right)}>{ch.choice}</Choice>
+                        <Choice key={index} bgColor={colors[index][0]} color={colors[index][1]}  
+                        onClick={(e)=>handleAnswering(e,ch.right,index)}>{ch.choice}</Choice>
                     );
                 })}
                 <SubmitBtn onClick={handleSubmit}>Submit</SubmitBtn>

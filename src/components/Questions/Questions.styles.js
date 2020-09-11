@@ -24,8 +24,10 @@ color:#2c2c2c;
 const Choice=styled.div`
 width: 653px;
 height: 40px;
-background-color: #FFFFFF;
-color:#2c2c2c;
+/* background-color: #FFFFFF;
+color:#2c2c2c; */
+background-color: ${props=>props.bgColor};
+color:${props=>props.color};
 border-radius: 5px;
 cursor:pointer;
 &:hover{
