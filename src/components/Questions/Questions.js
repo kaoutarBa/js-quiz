@@ -17,6 +17,8 @@ const Questions=({currentQuestion,setCurrentQuestion,setResult,questions})=>{
             ["#FFFFFF","#2c2c2c"],
             ["#FFFFFF","#2c2c2c"],
             ["#FFFFFF","#2c2c2c"]]);
+        setUserAnswer("");
+    
     };
     const handleAnswering=(choice,choiceIndex)=>{
         const newColors=colors.map((colorSet,index)=>{

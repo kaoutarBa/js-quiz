@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Result=()=>{
+const Result=({result})=>{
     return(
     <div>
-     Result
+     {result}
     </div>
     );
 
