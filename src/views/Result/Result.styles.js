@@ -40,6 +40,13 @@ outline:none;
     opacity:0.9;
 }
 `;
+
+const ShareButton=styled(Button)`
+font-size: 16px;
+color: #FFFFFF;
+cursor: pointer;
+`;
+
 const YourResult=styled.div`
 width: 232px;
 height: 53px;
@@ -68,4 +75,4 @@ justify-content:space-around;
 
 `;
 
-export {ResultSection,Container,YouGot,Button,YourResult,A,ButtonsSection};
+export {ResultSection,Container,YouGot,Button,YourResult,A,ButtonsSection,ShareButton};
