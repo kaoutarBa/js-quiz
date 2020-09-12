@@ -19,8 +19,9 @@ text-decoration:none;
 const PoweredBy=styled.div`
 grid-column:2/3;
 grid-row:1/2;
-font-size:16px;
+font-size:13px;
 color: #AAA3A3;
+margin-top:3px;
 justify-self:center;
 `;
 const GithubCredit=styled.div`

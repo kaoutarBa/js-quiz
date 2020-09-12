@@ -2,54 +2,64 @@ import styled from 'styled-components';
 
 
 const QuestionsSection=styled.section`
-width: 790px;
-height: 375px;
-background: #B5EED3;
-border-radius:5px;
+width: 670px;
+height: 340px;
+background: rgba(0, 191, 166, 0.5);
+border-radius: 10px;
 display: flex;
 flex-direction:column;
 justify-content:space-around;
 align-items:center;
-margin:auto;
-
+box-shadow: 2px 1px 5px #dedede;
 `;
 
 const Question=styled.div`
-width: 700px;
-height: 98px;
-background: #FFFFFF;
+width: 630px;
+height: 75px;
+background: #F1FFC8;
 border-radius: 10px;
-color:#2c2c2c;
+display:flex;
+margin-top:20px;
+margin-bottom:20px;
+border:1px solid #B4BEBE;
 `;
+const Content=styled.div`
+color:#095066;
+font-size:17px;
+font-weight:600;
+margin:auto;
+`;
+
 const Choice=styled.div`
-width: 653px;
-height: 40px;
-/* background-color: #FFFFFF;
-color:#2c2c2c; */
+width: 550px;
+height: 45px;
 background-color: ${props=>props.bgColor};
 color:${props=>props.color};
-border-radius: 5px;
+border-radius: 10px;
 cursor:pointer;
-&:hover{
-    background: whitesmoke;
-    opacity:0.7;
-    color:gray;
-}
-
+border:1px solid #B4BEBE;
+display:flex;
+`;
+const ChoiceContent=styled.div`
+background-color: inherit;
+color:inherit;
+justify-content:space-around;
+margin:auto;
 `;
 const SubmitBtn=styled.button`
 width: 130px;
-height: 39px;
+height: 40px;
 border:none;
 background: #3BA6C8;
-border-radius:5px;
+border-radius:10px;
 outline:none;
-font-size:16px;
-font-weight:400;
+font-size:18px;
+font-weight:500;
 align-self:flex-end;
 color:white;
 cursor:pointer;
+margin-right:10px;
 `;
 
 
-export{QuestionsSection,Question,Choice,SubmitBtn};
+export{QuestionsSection,Question,Choice,SubmitBtn,Content,ChoiceContent};

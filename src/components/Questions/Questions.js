@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import {QuestionsSection,Question,Choice,SubmitBtn} from './Questions.styles';
+import {QuestionsSection,Question,Choice,SubmitBtn,Content,ChoiceContent} from './Questions.styles';
 import { Route, Redirect } from "react-router-dom";
 
 
@@ -23,7 +23,7 @@ const Questions=({currentQuestion,setCurrentQuestion,setResult,questions})=>{
     const handleAnswering=(choice,choiceIndex)=>{
         const newColors=colors.map((colorSet,index)=>{
                 if(choiceIndex===index){
-                    colorSet=["green","white"];
+                    colorSet=["#24728B","#E5E5E5"];
                 }
                 else{
                     colorSet=["#FFFFFF","#2c2c2c"];
@@ -39,11 +39,14 @@ const Questions=({currentQuestion,setCurrentQuestion,setResult,questions})=>{
             .map(q=>{
                 return(
                     <QuestionsSection key={q[1]}>
-                        <Question>{questions[q].question}</Question>
+                        <Question><Content>{questions[q].question}</Content></Question>
                         {questions[q].choices.map((ch,index)=>{
                             return(
                                     <Choice key={index} bgColor={colors[index][0]} color={colors[index][1]}  
-                                    onClick={(e)=>handleAnswering(ch.right,index)}>{ch.choice}</Choice>
+                                    onClick={(e)=>handleAnswering(ch.right,index)}>
+                                        <ChoiceContent>
+                                        {ch.choice}
+                                        </ChoiceContent></Choice>
                                     );
                             })}
                         <SubmitBtn onClick={handleSubmit}>Submit</SubmitBtn>

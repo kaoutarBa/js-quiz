@@ -4,7 +4,7 @@ import React from 'react';
 const Result=({result})=>{
     return(
     <div>
-        You Got {result}% !
+        You Got {Math.floor((result/15)*100)}% !
     </div>
     );
 
