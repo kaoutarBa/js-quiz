@@ -5,7 +5,7 @@ const Container=styled.div`
 max-height:80vh;
 width:100%;
 display:grid;
-grid-template-columns:50% 5% 35% 10%;
+grid-template-columns:50% 20% 20% 10%;
 grid-template-rows:15% 45% 25% 15%;
 `;
 const Img=styled.img`
@@ -18,6 +18,7 @@ const Title=styled.div`
 font-size:50px;
 font-weight:500;
 color:#00BFA6;
+
 `;
 const P=styled.div`
 padding-left:10px;
@@ -28,12 +29,12 @@ const Section=styled.section`
 grid-column:2/4;
 grid-row:2/3;
 align-self:center;
-justify-self:start;
+justify-self:center;
 
 `;
 
 const StartBtn=styled.button`
-align-self:start;
+align-self:center;
 justify-self:center;
 grid-column:3/4;
 grid-row:3/4;
@@ -44,7 +45,6 @@ color:#00BFA6;
 border-radius:11px;
 font-size:23px;
 font-weight:500;
-cursor:pointer;
 outline:none;
 background:white;
 &:hover{

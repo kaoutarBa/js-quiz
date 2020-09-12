@@ -4,7 +4,7 @@ import {Title,Container,GetMore} from './Header.styles';
 const Header=()=>{
     return(
         <Container>
-            <Title>Quiz App</Title> 
+            <Title>JavaScript Quiz</Title> 
             <GetMore>Get More</GetMore>
         </Container>
    );

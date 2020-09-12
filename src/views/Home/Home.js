@@ -7,7 +7,7 @@ const Home=()=>{
     <Container>
         <Img src={question} alt={"question"}/>
         <Section>
-            <Title>Quiz App</Title>
+            <Title>JavaScript Quiz</Title>
             <P>  Test Your Knowledge!</P>
         </Section>
         <StartBtn type={"button"}>

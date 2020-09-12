@@ -1,5 +1,5 @@
 
-## Quiz App
+## JavaScript Quiz
 
 this project is created using React.js, JavaScript, HTML, CSS, styled-components.
 
