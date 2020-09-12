@@ -1,165 +1,165 @@
 {"q1":
-    {"question":"question 1 Lorem ipsum dolor sit amet",
+    {"question":"Inside which HTML element do we put the JavaScript?",
     "choices":[
-        {"choice":"right",
-        "right":true},
-        {"choice":"false",
+        {"choice":" <js>",
         "right":false},
-        {"choice":"false",
-        "right":false}
+        {"choice":" <scripting>",
+        "right":false},
+        {"choice":"<script>",
+        "right":true}
     ]
     },
 "q2":
-    {"question":"question 2 Lorem ipsum dolor sit amet",
+    {"question":"Where is the correct place to insert a JavaScript? ",
         "choices":[
-            {"choice":"right",
-            "right":true},
-            {"choice":"false",
+            {"choice":" The <head> section",
             "right":false},
-            {"choice":"false",
-            "right":false}
+            {"choice":" The <body> section",
+            "right":false},
+            {"choice":" Both the <head> section and the <body> section are correct",
+            "right":true}
         ]
     },    
 "q3":
-    {"question":" question 3 Lorem ipsum dolor sit amet",
+    {"question":"What is the correct syntax for referring to an external script called \"xxx.js\"?",
         "choices":[
-            {"choice":"right",
+            {"choice":" <script src=\"xxx.js\">",
             "right":true},
-            {"choice":"false",
+            {"choice":" <script name=\"xxx.js\">",
             "right":false},
-            {"choice":"false",
+            {"choice":" <script href=\"xxx.js\">",
             "right":false}
         ]
     },
 "q4":
-    {"question":" question 4 Lorem ipsum dolor sit amet",
+    {"question":"How do you write \"Hello World\" in an alert box?",
         "choices":[
-            {"choice":"right",
-            "right":true},
-            {"choice":"false",
+            {"choice":" msgBox(\"Hello World\");",
             "right":false},
-            {"choice":"false",
+            {"choice":" alert(\"Hello World\");",
+            "right":true},
+            {"choice":" alertBox(\"Hello World\");",
             "right":false}
         ]
     },
 "q5":
-    {"question":"question 5 Lorem ipsum dolor sit amet",
+    {"question":"How do you create a function in JavaScript?",
     "choices":[
-        {"choice":"right",
+        {"choice":" function myFunction()",
         "right":true},
-        {"choice":"false",
+        {"choice":" function:myFunction()",
         "right":false},
-        {"choice":"false",
+        {"choice":" function=myFunction()",
         "right":false}
     ]
     },
 "q6":
-    {"question":"question 6 Lorem ipsum dolor sit amet",
+    {"question":"How do you call a function named \"myFunction\"?",
         "choices":[
-            {"choice":"right",
-            "right":true},
-            {"choice":"false",
+            {"choice":" call function myFunction()",
             "right":false},
-            {"choice":"false",
+            {"choice":" myFunction()",
+            "right":true},
+            {"choice":" call myFunction()",
             "right":false}
         ]
     },    
 "q7":
-    {"question":" question 7 Lorem ipsum dolor sit amet",
+    {"question":"Which event occurs when the user clicks on an HTML element?",
         "choices":[
-            {"choice":"right",
+            {"choice":"onclick",
             "right":true},
-            {"choice":"false",
+            {"choice":"onmouseclick",
             "right":false},
-            {"choice":"false",
+            {"choice":"onmouseover",
             "right":false}
         ]
     },
 "q8":
-    {"question":" question 8 Lorem ipsum dolor sit amet",
+    {"question":" How to write an IF statement in JavaScript?",
         "choices":[
-            {"choice":"right",
+            {"choice":" if (i == 5)",
             "right":true},
-            {"choice":"false",
+            {"choice":" if i = 5 then",
             "right":false},
-            {"choice":"false",
+            {"choice":" if i = 5",
             "right":false}
         ]
     },
 "q9":
-    {"question":"question 9 Lorem ipsum dolor sit amet",
+    {"question":"How to write an IF statement for executing some code if \"i\" is NOT equal to 5?",
     "choices":[
-        {"choice":"right",
+        {"choice":" if (i != 5)",
         "right":true},
-        {"choice":"false",
+        {"choice":" if i =! 5 then",
         "right":false},
-        {"choice":"false",
+        {"choice":" if (i <> 5)",
         "right":false}
     ]
     },
 "q10":
-    {"question":"question 10 Lorem ipsum dolor sit amet",
+    {"question":"How does a WHILE loop start?",
         "choices":[
-            {"choice":"right",
-            "right":true},
-            {"choice":"false",
+            {"choice":" while i = 1 to 10",
             "right":false},
-            {"choice":"false",
-            "right":false}
+            {"choice":" while (i <= 10; i++)",
+            "right":false},
+            {"choice":" while (i <= 10)",
+            "right":true}
         ]
     },    
 "q11":
-    {"question":" question 11 Lorem ipsum dolor sit amet",
+    {"question":" How does a FOR loop start?",
         "choices":[
-            {"choice":"right",
+            {"choice":" for (i = 0; i <= 5; i++)",
             "right":true},
-            {"choice":"false",
+            {"choice":" for (i = 0; i <= 5)",
             "right":false},
-            {"choice":"false",
+            {"choice":" for i = 1 to 5",
             "right":false}
         ]
     },
 "q12":
-    {"question":" question 12 Lorem ipsum dolor sit amet",
+    {"question":"How can you add a comment in a JavaScript?",
         "choices":[
-            {"choice":"right",
-            "right":true},
-            {"choice":"false",
+            {"choice":"'This is a comment",
             "right":false},
-            {"choice":"false",
-            "right":false}
+            {"choice":" <!--This is a comment-->",
+            "right":false},
+            {"choice":"//This is a comment",
+            "right":true}
         ]
     },
 "q13":
-    {"question":" question 13 Lorem ipsum dolor sit amet",
+    {"question":"What is the correct way to write a JavaScript array?",
         "choices":[
-            {"choice":"right",
-            "right":true},
-            {"choice":"false",
+            {"choice":" var colors = (1:\"red\", 2:\"green\", 3:\"blue\")",
             "right":false},
-            {"choice":"false",
+            {"choice":" var colors = [\"red\", \"green\", \"blue\"]",
+            "right":true},
+            {"choice":" var colors = 1 = (\"red\"), 2 = (\"green\"), 3 = (\"blue\")",
             "right":false}
         ]
     },
 "q14":
-    {"question":" question 14 Lorem ipsum dolor sit amet",
+    {"question":"How do you find the number with the highest value of x and y?",
         "choices":[
-            {"choice":"right",
-            "right":true},
-            {"choice":"false",
+            {"choice":" Math.ceil(x, y)",
             "right":false},
-            {"choice":"false",
-            "right":false}
+            {"choice":" top(x, y)",
+            "right":false},
+            {"choice":" Math.max(x, y)",
+            "right":true}
         ]
     },
 "q15":
-    {"question":" question 15 Lorem ipsum dolor sit amet",
+    {"question":"How can you detect the client's browser name?",
         "choices":[
-            {"choice":"right",
+            {"choice":" navigator.appName",
             "right":true},
-            {"choice":"false",
+            {"choice":" browser.name",
             "right":false},
-            {"choice":"false",
+            {"choice":" client.navName",
             "right":false}
         ]
     }                             

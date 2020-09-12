@@ -34,7 +34,7 @@ const Questions=({currentQuestion,setCurrentQuestion,setResult,questions})=>{
         setUserAnswer(choice);
     };
     return(
-        (currentQuestion!==Object.keys(questions).length)?
+        (currentQuestion!==Object.keys(questions).length+1)?
             (Object.keys(questions).filter(q=>q.slice(1)===""+currentQuestion)
             .map(q=>{
                 return(
