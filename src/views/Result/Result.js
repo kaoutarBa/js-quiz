@@ -15,7 +15,7 @@ const Result=({result})=>{
     </Button>
     <Button type="button"><A href={"/quiz"}> Redo Quiz</A></Button>
     <Button type="button">
-        <A href={"javascript:alert('quizapp-ba.com ');"}>Share</A>
+        <A href={"javascript:alert('https://quiz-app-ba.herokuapp.com ');"}>Share</A>
     </Button>
     </ButtonsSection>
    

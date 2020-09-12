@@ -24,8 +24,8 @@ align-self:center;
 `;
 const YouGot=styled.div`
 margin:auto;
-font-size: 30px;
-font-weight:400;
+font-size: 31px;
+font-weight:500;
 color: #095066;
 `;
 
@@ -36,7 +36,9 @@ border:none;
 background: #3BA6C8;
 border-radius: 5px;
 outline:none;
-cursor: pointer;
+&:hover{
+    opacity:0.9;
+}
 `;
 const YourResult=styled.div`
 width: 232px;
