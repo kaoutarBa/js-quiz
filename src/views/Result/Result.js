@@ -1,11 +1,7 @@
 import React from 'react';
-import {ResultSection,YouGot,Button,Container,YourResult,A,ButtonsSection,ShareButton} from './Result.styles';
+import {ResultSection,YouGot,Button,Container,YourResult,A,ButtonsSection} from './Result.styles';
 
 const Result=({result})=>{
-    const handleClick=()=>{
-        alert('https://quiz-app-ba.herokuapp.com ');
-
-    };
     return(
     <Container>
      <YourResult>Your Result</YourResult>   
@@ -18,9 +14,9 @@ const Result=({result})=>{
     <A href={"/"}> Home</A>
     </Button>
     <Button type="button"><A href={"/quiz"}> Redo Quiz</A></Button>
-    <ShareButton type="button" onClick={handleClick}>
-        Share
-    </ShareButton>
+    <Button type="button">
+        <A href={"javascript:alert('https://quiz-app-ba.herokuapp.com ');"}>Share</A>
+    </Button>
     </ButtonsSection>
    
     </Container>    
